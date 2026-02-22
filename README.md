@@ -1,7 +1,7 @@
 ﻿# ImageProcessFinal
 
 This repo is for image processing courseworks at Utrecht University (FA24)  
-A Windows Forms application built with C# (.NET Framework 4.8) for applying various image processing algorithms.
+A Windows Forms application built with C# (.NET Framework 4.8) for applying 10+ various image processing algorithms.   Implemented performance-optimized pixel operations using 2D array representations, enabling efficient multi-image operations with input validation and error handling.  
 
 
 
@@ -15,7 +15,7 @@ A Windows Forms application built with C# (.NET Framework 4.8) for applying vari
 - **Shape Analysis**: Trace Boundary, Largest Shape, Connected Components (Count Non-Background Values), Value Counting
 - **Hough Transform**: Standard, Angle-Limited, Peak Finding, Line Detection, Line Segment Visualization, Circle Detection
 - **Multi-image Operations**: AND, OR (requires two loaded images)
-- **Stop Sign Detection**: Full pipeline combining preprocessing, Hough transform, and peak finding
+- **Stop Sign Detection**: Full pipeline combining preprocessing, Hough transform, peak finding, and Moore neighborhood tracing
 
 
 ## Requirements
@@ -49,5 +49,6 @@ https://github.com/chihyu702/imageProcessingFinal.git
 
 ## Usage example
 <img width="1707" height="652" alt="image" src="https://github.com/user-attachments/assets/cfa50bf6-ea07-4bf2-84b9-d915f2b45fbd" />
+
 
 

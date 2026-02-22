@@ -46,3 +46,8 @@ https://github.com/chihyu702/imageProcessingFinal.git
 4. Fill in any required parameters (peak threshold, filter size, angle limits, etc.).
 5. Click **Apply** to process the image.
 6. Click **Save** to save the output image.
+
+## Usage example
+<img width="1707" height="652" alt="image" src="https://github.com/user-attachments/assets/cfa50bf6-ea07-4bf2-84b9-d915f2b45fbd" />
+
+

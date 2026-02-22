@@ -1,0 +1,78 @@
+Image Processing W1L2
+
+Recap:
+Quantization:
+- making the measured values discrete
+- Binary images: two possible values (0 and 1)
+
+Histograms:
+- histograms are frequency distributions of values.
+- for images, they describe how often each pixel value occurs.
+[
+Exposure:
+- exposure problems occur if one end of the intensity range is not used.
+- image is then either underexposed (too dark) or overexposed (too light).
+
+Contrast:
+- Contrast problems occur when not the full range of values is used.
+- contrast is defined as a_high - a_low, the highest and lowest intensity value in the image.
+
+Dynamic range:
+- dynamic range is the number of distinct pixel values.
+- the maximum possible dynamic range equals the contrast + 1
+- high dynamic ranges are usually preferred for image processing; they contain more detail.
+
+
+Image defects:
+- a histogram does not provide spatial information but can still reveal insights regarding the quality of the image.
+- often, the histogram is smooth, meaning the neighboring bins have similar counts. 
+- image compression can also lead to image defects; dynamic range is reduced with GIF compression.
+- novel patterns with novel intensity values emerge with JPEG compression.
+
+Binning:
+- When a histogram has many bins, visualisation becomes less intuitive.
+- Histogram becomes too large to visually appreciate.
+- many bins might be empty.
+]
+
+Color image histograms:
+- alternatively, we can plot histograms for each color channel.
+- each histogram encodes the intensity of a single color channel.
+
+Point Operations:
+- point operations modify pixel values based only on their value.
+- size, geometry and local structure of the image are not affected.
+- they map original pixel (intensity) values to new values.
+- point operations are typically used to change image contrast and brightness and to quantize (bin) the image.
+- Since we deal with images with discrete values, point operation f() can be implemented as a look-up table.
+
+Thresholding an image:
+- with thresholding, we separate the intensity values of an image into two classes based on a threshold value a_th.
+- result is a binary image.
+
+Effect on histogram:
+- since point operations operate on intensity values, not pixels, their effect on the histogram is typically clear:
+	- increasing brightness results in a shift to the right.
+	- inverting an image mirrors the histogram.
+- realise that a histogram bin stays or moves entirely to a new bin.
+
+
+Contrast adjustment:
+- automatic contrast adjustment is a point operation that maximises contrast.
+- essentially stretches the histogram such that the maximum range is used.
+- stretching causes histogram gaps.
+
+Modified auto-contrast:
+- incidental high and low values have a large effect on contrast adjustment.
+- can be solved by "ignoring" a fixed percentage q_low of the lowest and q_high of the highest values.
+
+
+Histogram equalization:
+- histogram equalization is the point operation that modifies the histogram to a uniform distribution of intensity values.
+- an approximation because bins can merge and shift, but not split.
+- a uniform histogram implies a linearly increasing cumulative histogram.
+- motivation: contrast will be maximum; gaps and spikes are common, dynamic range might decrease.
+
+
+
+

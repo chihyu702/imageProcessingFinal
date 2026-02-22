@@ -1,0 +1,5 @@
+C:\Users\chihy\Downloads\INFOIBV\obj\x86\Debug\INFOIBV.csproj.AssemblyReference.cache
+C:\Users\chihy\Downloads\INFOIBV\obj\x86\Debug\INFOIBV.INFOIBV.resources
+C:\Users\chihy\Downloads\INFOIBV\obj\x86\Debug\INFOIBV.Properties.Resources.resources
+C:\Users\chihy\Downloads\INFOIBV\obj\x86\Debug\INFOIBV.csproj.GenerateResource.cache
+C:\Users\chihy\Downloads\INFOIBV\obj\x86\Debug\INFOIBV.csproj.CoreCompileInputs.cache
